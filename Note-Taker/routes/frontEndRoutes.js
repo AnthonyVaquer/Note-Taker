@@ -1,4 +1,3 @@
-// const app = require('express')();
 const router = require('express').Router();
 const path = require('path');
 

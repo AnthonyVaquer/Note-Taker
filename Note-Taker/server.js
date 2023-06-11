@@ -1,6 +1,6 @@
 const express = require('express')
-const frontEndRoutes = require('./routes/frontEndRoutes.js')
-const backEndRoutes = require('./routes/backEndRoutes.js')
+const frontEndRoutes = require('./routes/frontEndRoutes')
+const backEndRoutes = require('./routes/backEndRoutes')
 
 const app = express()
 const PORT = process.env.PORT || 3001;
