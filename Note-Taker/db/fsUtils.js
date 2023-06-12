@@ -1,14 +1,14 @@
 const fs = require('fs');
 const util = require('util');
 
-// Promise version of fs.readFile
+// uses promisify method to read data from file
 const readFromFile = util.promisify(fs.readFile);
 /**
-//  Function to write data to the JSON file given a destination and some content
+//  writes content as a JSON string and writes to destination
 */
-const writeToFile = (destination, content) =>
-  fs.writeFile(destination, JSON.stringify(content, null, 4), (err) =>
-    err ? console.error(err) : console.info(`\nData written to ${destination}`)
+const writeToFile = async (destination, content) =>
+  await fs.writeFile(destination, JSON.stringify(content, null), (err) =>
+    err ? console.error(err) : console.info("Data has been written to destination")
   );
 
 

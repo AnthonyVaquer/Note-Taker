@@ -3,7 +3,7 @@ const frontEndRoutes = require('./routes/frontEndRoutes')
 const backEndRoutes = require('./routes/backEndRoutes')
 
 const app = express()
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3009;
 
 
 // middleware
